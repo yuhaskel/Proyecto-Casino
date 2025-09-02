@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; text-align: center; background: #064420; color: white; }
+.pantalla { display: none; padding: 20px; }
+.pantalla.activa { display: block; }
+button { padding: 10px 20px; margin: 5px; cursor: pointer; border-radius: 8px; }
+#mesa { display: flex; justify-content: space-around; margin-top: 20px; }
+#jugador, #casa { min-height: 80px; }
+.card { display: inline-block; margin: 2px; padding: 10px; background: white; color: black; border-radius: 5px; }

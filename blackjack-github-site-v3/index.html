@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blackjack Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="portada" class="pantalla activa">
+    <h1>Bienvenido a Blackjack</h1>
+    <button onclick="mostrarJuego()">Click aquí para jugar Blackjack</button>
+  </div>
+
+  <div id="juego" class="pantalla">
+    <h2>Blackjack</h2>
+    <div id="info">
+      <p>Dinero: $<span id="dinero">100</span></p>
+      <input type="number" id="apuesta" placeholder="Apuesta" />
+      <button onclick="apostar()">Apostar</button>
+    </div>
+    <div id="mesa">
+      <div><h3>Tus cartas</h3><div id="jugador"></div></div>
+      <div><h3>Cartas de la Casa</h3><div id="casa"></div></div>
+    </div>
+    <div id="acciones">
+      <button onclick="pedirCarta()">Pedir</button>
+      <button onclick="quedarse()">Quedarse</button>
+    </div>
+  </div>
+
+  <div id="gameover" class="pantalla">
+    <h1>Game Over</h1>
+    <p>Perdiste todo tu dinero.</p>
+    <button onclick="reiniciar()">Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
